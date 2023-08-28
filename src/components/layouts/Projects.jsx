@@ -31,7 +31,13 @@ const Projects = ({project}) => {
                     <Heading as='h3' size="h3" bottom="1rem">
                         {project.project_name}
                     </Heading>
-                    <IconContainer color='blue' size='2rem'>
+                    <IconContainer 
+                        as='a' 
+                        target='_blank'
+                        href={project.git_url}
+                        color='blue' 
+                        size='2rem'
+                    >
                         <FaGithub/>
                     </IconContainer>
                 </FlexContainer>
@@ -47,7 +53,7 @@ const Projects = ({project}) => {
                 <ParaText top='1.5rem' bottom='2rem'>
                     {project.project_desc}
                 </ParaText>
-                <Button>Visit Website</Button>
+                <Button as='a' target='_blank' href={project.project_url}>Visit Website</Button>
             </motion.div>
 
             {/* --Right Section Project Image-- */}

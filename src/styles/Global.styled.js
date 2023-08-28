@@ -121,6 +121,7 @@ export const Button = styled.button`
     background-color: ${({theme}) => theme.color.primary_light};
     border: 1px solid ${({theme}) => theme.color.gray};
     border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
 
