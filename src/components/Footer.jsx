@@ -28,7 +28,11 @@ const Footer = () => {
     const sendMail = (e) => {
         e.preventDefault();
         
-        emailjs.sendForm('service_74i6q3v', 'template_h6tkyz9', form.current, 'OdmTdMknZDpFU9HUZ').then(
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, 
+                        process.env.REACT_APP_TEMPLATE_ID, 
+                        form.current, 
+                        process.env.REACT_APP_PUBLIC_KEY)
+        .then(
             (result) => {
                 alert("Thanks for your Message");
             },
