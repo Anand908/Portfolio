@@ -30,11 +30,6 @@ export const Skills = [
         id: 3,
         tech: 'JavaScript',
         icon: <SiJavascript/>
-    },
-    {
-        id: 4,
-        tech: 'Java',
-        icon: <SiJavascript/>
     }
 ];
 
